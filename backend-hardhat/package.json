@@ -1,0 +1,27 @@
+{
+  "name": "backend-hardhat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "bank-deploy": "npx hardhat run scripts/bankDeploy.ts",
+    "bank-test": "npx hardhat test test/bankTest.ts --typecheck",
+    "coverage": "npx hardhat coverage"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "@openzeppelin/hardhat-upgrades": "^2.3.3",
+    "@types/chai": "^4.3.10",
+    "@types/mocha": "^10.0.4",
+    "@types/node": "^20.9.0",
+    "chai": "^4.3.10",
+    "hardhat": "^2.19.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2",
+    "dotenv": "^16.3.1"
+  }
+}
