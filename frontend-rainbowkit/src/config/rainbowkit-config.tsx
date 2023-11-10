@@ -2,6 +2,7 @@
 import '@rainbow-me/rainbowkit/styles.css';
 import {
  RainbowKitProvider,
+ darkTheme,
  getDefaultWallets,
 } from '@rainbow-me/rainbowkit';
 import { WagmiConfig, configureChains, createConfig } from 'wagmi';
@@ -37,7 +38,7 @@ export const CustomRainbowKitProvider = ({ children }: RainbowKitProviderProps) 
  })
  return (
   <WagmiConfig config={wagmiConfig}>
-   <RainbowKitProvider chains={chains}>
+   <RainbowKitProvider chains={chains} theme={darkTheme()}>
     {children}
    </RainbowKitProvider>
   </WagmiConfig>

@@ -4,6 +4,7 @@ import './globals.css'
 import { CustomRainbowKitProvider } from '@/config/rainbowkit-config'
 import { StarsCanvas } from '@/components/stars-background'
 import { Navbar } from '@/components/navbar'
+import { Toaster } from '@/components/ui/toaster'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,6 +26,7 @@ export default function RootLayout({
           <Navbar />
           {children}
         </CustomRainbowKitProvider>
+        <Toaster />
       </body>
     </html>
   )
